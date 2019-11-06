@@ -1,5 +1,5 @@
-# AREDN Documentation
-This repository is for creating documentation for the AREDN project so it can be made available on ReadTheDocs.
+# AREDN Documentation (Spanish)
+This repository is for creating Spanish documentation for the AREDN project so it can be made available on ReadTheDocs.
 
 ## Viewing the Docs:
 To view the AREDN documentation in a web browser, navigate to [https://arednmesh.readthedocs.io/en/latest/](https://arednmesh.readthedocs.io/en/latest/) or select your choice from the `Docs` dropdown menu on [https://arednmesh.org](https://arednmesh.org).
