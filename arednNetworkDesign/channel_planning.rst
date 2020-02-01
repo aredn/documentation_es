@@ -1,10 +1,10 @@
 ================
-Channel Planning
+Planificación de canales
 ================
 
-The previous section identified the different channels in each frequency band which are available for AREDN |trade| networking. Devices on each side of a radio link must use the same frequency band, channel, channel width, and SSID. Beyond that requirement, however, you have quite a bit of flexibility to select the radio channels that will ensure the highest signal quality and throughput for your network. In a basic AREDN |trade| network with several nodes spread across a limited geographical area, all of the nodes may use the same band, channel, and channel width. This allows them to establish the mesh network and route data to any of the sites as needed.
+La sección anterior identificó los diferentes canales en cada banda de frecuencia que están disponibles para AREDN | trade | redes. Los dispositivos a cada lado de un enlace de radio deben usar la misma banda de frecuencia, canal, ancho de canal y SSID. Sin embargo, más allá de ese requisito, tiene bastante flexibilidad para seleccionar los canales de radio que asegurarán la mayor calidad de señal y rendimiento para su red. En un AREDN | trade | red con varios nodos distribuidos en un área geográfica limitada, todos los nodos pueden usar la misma banda, canal y ancho de canal. Esto les permite establecer la red de malla y enrutar datos a cualquiera de los sitios según sea necesario.
 
-However, as more nodes join the network or when several nodes are :abbr:`collocated (same physical site)` and share the same channel, it is possible for overall network performance to degrade. In order for an AREDN |trade| network to scale up in size and complexity, frequency coordination and channel planning become increasingly important. To plan for future growth, mesh groups may need to partition network traffic by allocating channels for specific areas or types of links in order to ensure the network will be able to support the expected services.
+Sin embargo, a medida que más nodos se unen a la red o cuando varios nodos son: abbr: `colocados (mismo sitio físico)` y comparten el mismo canal, es posible que el rendimiento general de la red se degrade. Para un AREDN | trade | red para ampliar en tamaño y complejidad, la coordinación de frecuencias y la planificación de canales se vuelven cada vez más importantes. Para planificar el crecimiento futuro, los grupos de malla pueden necesitar dividir el tráfico de la red mediante la asignación de canales para áreas específicas o tipos de enlaces con el fin de garantizar que la red pueda soportar los servicios esperados.
 
 Wireless Network Operation
 --------------------------
