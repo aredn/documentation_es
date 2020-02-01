@@ -1,19 +1,19 @@
-==============================
-Radio Spectrum Characteristics
-==============================
+===========================================
+Características del espectro radioeléctrico
+===========================================
 
-AREDN |trade| networks operate in the microwave radio spectrum, and licensed amateur radio operators have unique access to many of these frequencies. For bands in which amateur operators share the spectrum, there is an increased chance for RF interference which may make some frequencies unusable for AREDN |trade| data networking. For best results, select frequencies that are not shared with other unlicensed users.
+AREDN | trade |  redes operan en el espectro de radio de microondas y los  radioaficionados con autorización especial tienen acceso exclusivo a muchas de estas frecuencias. Para las bandas en las que los radioaficionados comparten el espectro, existe una mayor probabilidad de interferencia de RF que puede hacer que algunas frecuencias sean inutilizables para AREDN | trade | redes de datos. Para obtener los mejores resultados, seleccione frecuencias que no se comparten con otros usuarios sin licencia.
 
-Each band is divided into channels, each of which consists of a 5 MHz frequency offset identified by the center frequency of the channel and assigned a numerical label. In the example below you can see that a selected channel may use more or less of the frequency range based on the chosen channel width. The wider the channel, the more overlap there will be with adjacent channels. Wide channels have the effect of reducing the number of non-overlapping or non-interfering channels that will be available for use. When selecting channels and widths, be sure to use non-overlapping channels. Devices not using the same channel and channel width that overlap will interfere with one another and cannot communicate to coordinate the sharing of bandwidth.
+Cada banda se divide en canales, cada uno de los cuales consiste en un desplazamiento de frecuencia de 5 MHz identificado por la frecuencia central del canal y se le asigna una etiqueta numérica. En el siguiente ejemplo, puede ver que un canal seleccionado puede usar más o menos el rango de frecuencia en función del ancho del canal elegido. Cuanto más ancho sea el canal, más superposición habrá con los canales adyacentes. Los canales anchos tienen el efecto de reducir la cantidad de canales que no se superponen o que no interfieren y que estarán disponibles para su uso. Al seleccionar canales y anchos de banda, asegúrese de usar canales que no se superpongan. Los dispositivos que no usan el mismo canal y ancho de canal que se superponen interferirán entre sí y no pueden comunicarse para coordinar el uso compartido del ancho de banda.
 
 .. image:: _images/channel-width-example.png
    :alt: Channel Width Example
    :align: center
 
-All of the 33 cm band is shared with other FCC authorized users. All of the upper channels on the 13 cm band are shared with standard FCC Part 15 :abbr:`WiFi (IEEE 802.11x)` users, as are all of the lower channels on the 5 cm band. The only frequency range which amateur operators do not currently share with non-licensed users is the 9 cm band, in which the US military may occasionally operate radio location units. The following table lists each amateur radio band, frequency range, total bandwidth of allocation, and the number of channels that are available for AREDN |trade| networking.
+Toda la banda de 33 cm se comparte con otros usuarios autorizados de la FCC. Todos los canales superiores en la banda de 13 cm se comparten con los usuarios estándar de la FCC Parte 15: abbr: `WiFi (IEEE 802.11x)`, al igual que todos los canales inferiores en la banda de 5 cm. El único rango de frecuencia que los radioaficionados no comparten actualmente con usuarios sin licencia es la banda de 9 cm, en la cual el ejército de los EE. UU. puede operar ocasionalmente con radiobalizas. La siguiente tabla enumera cada banda de radioaficionados, rango de frecuencia, ancho de banda total de asignación y la cantidad de canales disponibles para AREDN | trade | redes.
 
 =======  =================  ===============  ========
-Band     Frequency Range    Total Bandwidth  Channels
+Banda    Frecuencia         Ancho de banda   Canales 
 =======  =================  ===============  ========
 33 cm    902-928   MHz      25 MHz           5
 13 cm    2390-2450 MHz      45 MHz           9
@@ -21,73 +21,72 @@ Band     Frequency Range    Total Bandwidth  Channels
 5  cm    5650-5925 MHz      260 MHz          52
 =======  =================  ===============  ========
 
-The table above shows that the 9 cm band has the most available bandwidth in its unshared channels, while the 5 cm band has the next largest amount of available bandwidth in unshared channels. The choice of a frequency band for AREDN |trade| networking depends on several different factors, but you can "mix and match" bands in your network design as long as both sides of a radio link use the same band, channel, and channel width.
+La tabla anterior muestra que la banda de 9 cm tiene el mayor ancho de banda disponible en sus canales no compartidos, mientras que la banda de 5 cm tiene la siguiente mayor cantidad de ancho de banda disponible en canales no compartidos. La elección de una banda de frecuencia para conexiones AREDN | trade | red depende de varios factores diferentes, pero puede "mezclar y combinar" bandas en el diseño de su red siempre que ambos lados de un enlace de radio usen la misma banda, canal y ancho de canal.
 
-You have the option of selecting the channel width for each link. When using channels at the top or bottom of a band, be certain that your chosen width will not transmit outside of the FCC Part 97 allocation for that band. Different channel widths may yield better throughput than others. In some areas operators use different channels to isolate links, so they may need to use 10 MHz rather than 20 MHz channels in order to ensure they have enough available channels. Also, long distance links simply have better performance using 10 MHz vs. 20 MHz or 5 MHz channel widths. Test the performance of your links using various channel widths to ensure that they are optimized.
+Tiene la opción de seleccionar el ancho del canal para cada enlace. Cuando utilice canales en la parte superior o inferior de una banda, asegúrese de que el ancho elegido no se transmitirá fuera de la asignación de la Parte 97 de la FCC para esa banda. Diferentes anchos de canal pueden producir un mejor rendimiento que otros. En algunas áreas, los operadores usan diferentes canales para aislar enlaces, por lo que pueden necesitar usar canales de 10 MHz en lugar de 20 MHz para asegurarse de tener suficientes canales disponibles. Además, los enlaces de larga distancia simplemente tienen un mejor rendimiento con anchos de canal de 10 MHz frente a 20 MHz o 5 MHz. Pruebe el rendimiento de sus enlaces utilizando varios anchos de canal para asegurarse de que estén optimizados.
 
-Some of the advantages and disadvantages of each frequency range are explained in the sections below.
+Algunas de las ventajas y desventajas de cada rango de frecuencia se explican en las siguientes secciones.
 
-900 MHz Characteristics
------------------------
+Características de la banda de 900 MHz
+--------------------------------------
 
-**Disadvantages**
-  The entire 33 cm band is shared between several FCC authorized radio services. The disadvantage of using this band for AREDN |trade| networking is that in all but the most remote areas the RF noise floor may be very high, which reduces the :abbr:`SNR (Signal to Noise Ratio)` and results in packet loss, retransmission delays, and lower usable link quality.
+** Desventajas **
+Toda la banda de 33 cm se comparte entre varios servicios de radio autorizados por la FCC. La desventaja de usar esta banda para conexiones de red  AREDN | trade |  es que en todas las áreas remotas, excepto en las más remotas, el nivel de ruido de RF puede ser muy alto, lo que reduce el: abbr: `SNR (relación señal / ruido)` y da como resultado la pérdida de paquetes, retrasos en la retransmisión y una menor calidad de enlace utilizable.
 
-  Another disadvantage is that the equipment can be more expensive than devices that operate in the 2.4 and 5.8 GHz bands. Also the entire band is quite narrow (25 MHz) which means that only one, two, or five radio channels can exist in this shared frequency range, depending on the channel width that is selected.
+Otra desventaja es que el equipo puede ser más costoso que los dispositivos que operan en las bandas de 2.4 y 5.8 GHz. Además, toda la banda es bastante estrecha (25 MHz), lo que significa que solo pueden existir uno, dos o cinco canales de radio en este rango de frecuencia compartida, dependiendo del ancho del canal seleccionado.
 
-**Advantages**
-  The advantage of this frequency band is that its longer wavelength makes it better suited for penetrating some types of obstructions and foliage which would normally block signals at higher frequencies. Its :abbr:`NLOS (Non Line of Sight)` propagation characteristics may be exactly what is needed in order to establish an RF link between two difficult locations.
+**Ventajas**
+La ventaja de esta banda de frecuencia es que su longitud de onda más larga la hace más adecuada para penetrar algunos tipos de obstrucciones que normalmente bloquearían las señales a frecuencias más altas. Sus características de propagación: abbr: `NLOS (Non Line of Sight)` pueden ser exactamente lo que se necesita para establecer un enlace de RF entre dos ubicaciones difíciles.
 
-2.4 GHz Characteristics
------------------------
+Características de la banda de 2.4 GHz 
+--------------------------------------
 
-**Disadvantages**
-  The upper channels of the 13 cm band are shared with several other FCC authorized services. Depending on local RF conditions it may not be possible to use these shared channels because of the high noise floor which reduces :abbr:`SNR (Signal to Noise Ratio)` and decreases signal quality. This leaves licensed amateur operators only two unshared channels with a possible bandwidth of 10 MHz each.
+**Desventajas**
+Los canales superiores de la banda de 13 cm se comparten con varios otros servicios autorizados por la FCC. Dependiendo de las condiciones locales de RF, puede que no sea posible utilizar estos canales compartidos debido al alto nivel de ruido que reduce: abbr: `SNR (relación señal / ruido)` y disminuye la calidad de la señal. Esto deja a los radioaficionados  solo con dos canales no compartidos con un posible ancho de banda de 10 MHz cada uno.
 
-  One concern with all of the higher frequency bands is that there must be clear line of sight between the nodes on each side of the link. This means that not only do the nodes need to have an unobstructed direct path, but the Fresnel Zone between the nodes must also be clear. The diameter of the Fresnel Zone depends on the frequency and the distance between nodes. For example, on a link in the 13 cm band with 10 miles between nodes, the first Fresnel Zone radius will be 72 feet. If less than 20% of the Fresnel Zone is obstructed there is little signal loss, but any blockage beyond 40% will cause significant signal loss and could make the path unusable. In the 13 cm band the 60% no blockage radius is approximately 43 feet, which is often higher than most *Intermediate* or *Last Mile* nodes have been installed. Careful consideration must be given to node height and the terrain between nodes in order to minimize obstructions.
+Una preocupación con todas las bandas de frecuencias más altas es que debe haber una línea de visión clara entre los nodos a cada lado del enlace. Esto significa que no solo los nodos necesitan tener una ruta directa sin obstrucciones, sino que la Zona Fresnel entre los nodos también debe estar despejada. El diámetro de la zona de Fresnel depende de la frecuencia y la distancia entre los nodos. Por ejemplo, en un enlace en la banda de 13 cm con 10 millas entre nodos, el primer radio de la Zona Fresnel será de 72 pies. Si menos del 20% de la zona de Fresnel está obstruida, hay poca pérdida de señal, pero cualquier bloqueo más allá del 40% causará una pérdida de señal significativa y podría inutilizar el camino. En la banda de 13 cm, el radio del 60% sin bloqueo es de aproximadamente 43 pies, que a menudo es más alto que la mayoría de los nodos * Intermedio * o * Última milla * que se han instalado. Se debe considerar cuidadosamente la altura del nodo y el terreno entre los nodos para minimizar las obstrucciones.
 
 .. image:: _images/2.4ghz.png
    :alt: 2.4 GHz Band
    :align: center
 
-**Advantages**
-  Within the available frequency range you have the option of selecting channel widths of either 5, 10, or 20 MHz. A larger channel width will provide higher data rates. However, one effect of reducing the channel width is to increase the :abbr:`SNR (Signal to Noise Ratio)` to improve signal quality. For example, changing from a 20 MHz to a 10 MHz channel width will result in a 3 dB signal gain and could make the difference between a marginal link and a usable one. Just remember that when you cut the channel width in half you are also reducing your maximum throughput by half. Carefully test your links to ensure optimal performance.
+**Ventajas**
+Dentro del rango de frecuencia disponible, tiene la opción de seleccionar anchos de canal de 5, 10 o 20 MHz. Un ancho de canal mayor proporcionará velocidades de datos más altas. Sin embargo, un efecto de reducir el ancho del canal es aumentar: abbr: `SNR (relación señal / ruido)` para mejorar la calidad de la señal. Por ejemplo, cambiar de un ancho de canal de 20 MHz a 10 MHz dará como resultado una ganancia de señal de 3 dB y podría marcar la diferencia entre un enlace marginal y uno utilizable. Solo recuerde que cuando corta el ancho del canal a la mitad, también reduce su rendimiento máximo a la mitad. Pruebe cuidadosamente sus enlaces para garantizar un rendimiento óptimo.
 
-  One advantage for the 13 cm band is that radio equipment and antenna systems are more readily available and less costly due to higher consumer demand. There is a wide variety of equipment from several manufacturers which supports the AREDN |trade| firmware and operates in this band. With clear line of sight and well-tuned antennas, 2.4 GHz signals can propagate across very long distances.
+Una ventaja para la banda de 13 cm es que los equipos de radio y los sistemas de antena están más disponibles y son menos costosos debido a la mayor demanda del consumidor. Existe una gran variedad de equipos de varios fabricantes que respaldan AREDN |trade | y operan en esta banda. Con una línea de visión clara y antenas bien sintonizadas, las señales de 2.4 GHz pueden propagarse a través de distancias muy largas.
 
-3.4 GHz Characteristics
------------------------
+ Características de la banda de 3.4 GHz 
+----------------------Características----------------
 
-**Disadvantages**
-  As mentioned above, there must be clear line of sight and the Fresnel Zone between nodes also must be clear. For a link in the 9 cm band with 10 miles between nodes the first Fresnel Zone radius will be 62 feet, which is less than the 13 cm band discussed above. However, the 60% no blockage radius is still about 37 feet. Consider node :abbr:`AGL (height Above Ground Level)` and terrain in order to minimize obstructions.
+**Desventajas**
+Como se mencionó anteriormente, debe haber una línea de visión clara y la zona de Fresnel entre los nodos también debe estar despejada. Para un enlace en la banda de 9 cm con 10 millas entre nodos, el primer radio de la zona de Fresnel será de 62 pies, que es menor que la banda de 13 cm discutida anteriormente. Sin embargo, el radio del 60% sin bloqueo sigue siendo de unos 37 pies. Considere el nodo: abbr: `AGL (altura sobre el nivel del suelo)` y el terreno para minimizar las obstrucciones.
 
-  Equipment for the 9 cm band is less readily available and is typically more expensive due to less consumer demand. Care must be taken when selecting radios so as not to confuse them with the more common :abbr:`WiMAX (IEEE 802.16)` devices which are designed for the 3.65 GHz range and are not supported by AREDN |trade| firmware.
+El equipo para la banda de 9 cm está menos disponible y generalmente es más costoso debido a la menor demanda del consumidor. Se debe tener cuidado al seleccionar radios para no confundirlos con los dispositivos más comunes: abbr: `WiMAX (IEEE 802.16)` que están diseñados para el rango de 3,65 GHz y no son compatibles con AREDN | trade | firmware.
 
 .. image:: _images/3.4ghz.png
    :alt: 3.4 GHz Band
    :align: center
 
-**Advantages**
-  The main advantage for using the 9 cm band is that it has more available bandwidth for use in unshared channels than any other band. You can select channel widths of 5, 10, or 20 MHz, with larger channel widths providing higher data rates. Remember that reducing the channel width will increase the :abbr:`SNR (Signal to Noise Ratio)` to improve signal quality if that is an issue for a particular link. Equipment in the 9 cm band is well-suited for *Backbone Links* since there is little possibility for interference from other devices sharing these frequencies at tower sites. With clear line of sight and well-tuned antennas, 3.4 GHz signals can propagate across very long distances.
+**Ventajas**
+La principal ventaja de usar la banda de 9 cm es que tiene más ancho de banda disponible para usar en canales no compartidos que cualquier otra banda. Puede seleccionar anchos de canal de 5, 10 o 20 MHz, con anchos de canal más grandes que proporcionan velocidades de datos más altas. Recuerde que reducir el ancho del canal aumentará: abbr: `SNR (relación señal / ruido)` para mejorar la calidad de la señal si eso es un problema para un enlace en particular. El equipo en la banda de 9 cm es adecuado para * Backbone Links * ya que hay pocas posibilidades de interferencia de otros dispositivos que comparten estas frecuencias en los sitios de la torre. Con una línea de visión clara y antenas bien sintonizadas, las señales de 3,4 GHz pueden propagarse a través de distancias muy largas.
 
-5.8 GHz Characteristics
------------------------
+Características de la banda de 5.8 GHz 
+--------------------------------------
 
-**Disadvantages**
-  As mentioned previously, there must be clear line of sight and the Fresnel Zone between nodes also must be unobstructed. For a link in the 5 cm band with 10 miles between nodes the first Fresnel Zone radius will be 46 feet, which is much less than the frequency bands discussed above. However, the 60% no blockage radius in the 5 cm band is still about 28 feet. Be sure to account for node :abbr:`AGL (height Above Ground Level)` and terrain in order to achieve clear line of sight between nodes.
+**Desventajas**
+Como se mencionó anteriormente, debe haber una línea de visión clara y la zona de Fresnel entre los nodos también debe estar despejada. Para un enlace en la banda de 5 cm con 10 millas entre nodos, el primer radio de la Zona Fresnel será de 46 pies, que es mucho menor que las bandas de frecuencia discutidas anteriormente. Sin embargo, el radio del 60% sin bloqueo en la banda de 5 cm todavía es de aproximadamente 28 pies. Asegúrese de tener en cuenta el nodo: abbr: `AGL (altura sobre el nivel del suelo)` y el terreno para lograr una línea de visión clara entre los nodos.
 
 .. image:: _images/5.8ghz.png
    :alt: 5.8 GHz Band
    :align: center
 
-**Advantages**
-  One advantage for using the 5 cm band is that it contains 52 channels, and many of them at the upper end of the band are under-utilized with less chance of interference. You can choose channel widths of 5, 10, or 20 MHz, with larger channel widths providing higher data rates. Remember that reducing the channel width will increase the :abbr:`SNR (Signal to Noise Ratio)` to improve signal quality if that is an issue for a problem link.
+**Ventajas**
+Una ventaja de usar la banda de 5 cm es que contiene 52 canales, y muchos de ellos en el extremo superior de la banda se subutilizan con menos posibilidades de interferencia. Puede elegir anchos de canal de 5, 10 o 20 MHz, canales con mas ancho proporcionan velocidades de datos más altas. Recuerde que la reducción del ancho del canal aumentará: abbr: `SNR (Relación señal / ruido)` para mejorar la calidad de la señal si eso es un problema para un enlace problemático.
 
-  The radio equipment and antenna systems for this band are readily available and are less expensive due to greater consumer demand. There is a wide variety of equipment from several manufacturers which supports the AREDN |trade| firmware and operates across the 52 available channels. Radio and antenna systems for this band which are similar in size to those for other bands will often have higher gain. Devices in the 5 cm band are also well-suited for *Backbone Links* since there is little chance for RF interference from other radios sharing these frequencies at high profile sites. With clear line of sight and well-tuned antennas, 5.8 GHz signals can propagate across very long distances.
+El equipo de radio y los sistemas de antena para esta banda están fácilmente disponibles y son menos costosos debido a la mayor demanda del consumidor. Existe una gran variedad de equipos de varios fabricantes que respaldan el  AREDN |trade | firmware y operan a través de los 52 canales disponibles. Los sistemas de radio y antena para esta banda que son similares en tamaño a los de otras bandas y a menudo tendrán mayor ganancia. Los dispositivos en la banda de 5 cm también son adecuados para * Backbone Links * ya que hay pocas posibilidades de interferencia de RF de otras radios que comparten estas frecuencias en sitios de alto perfil. Con una línea de visión clara y antenas bien sintonizadas, las señales de 5.8 GHz pueden propagarse a través de distancias muy largas.
 
-----------
 
-Different frequency ranges are available to connect the mesh nodes that are required in order to fulfill the purposes for your network. As you plan the frequencies to be deployed at specific locations, it may be helpful to use a *spectrum analyzer* for identifying ranges that are already in use. The ultimate goal is to have a reliable data network that accomplishes its purpose for providing services to the intended destinations and users.
+Hay diferentes rangos de frecuencia disponibles para conectar los nodos de malla necesarios para cumplir con los propósitos de su red. Al planificar las frecuencias que se desplegarán en ubicaciones específicas, puede ser útil usar un * analizador de espectro * para identificar los rangos que ya están en uso. El objetivo final es tener una red de datos confiable que cumpla su propósito de proporcionar servicios a los destinos y usuarios previstos.
 
 
 .. |trade|  unicode:: U+00AE .. Registered Trademark SIGN

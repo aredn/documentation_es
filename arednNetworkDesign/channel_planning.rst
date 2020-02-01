@@ -1,6 +1,6 @@
-================
+========================
 Planificación de canales
-================
+========================
 
 La sección anterior identificó los diferentes canales en cada banda de frecuencia que están disponibles para AREDN | trade | redes. Los dispositivos a cada lado de un enlace de radio deben usar la misma banda de frecuencia, canal, ancho de canal y SSID. Sin embargo, más allá de ese requisito, tiene bastante flexibilidad para seleccionar los canales de radio que asegurarán la mayor calidad de señal y rendimiento para su red. En un AREDN | trade | red con varios nodos distribuidos en un área geográfica limitada, todos los nodos pueden usar la misma banda, canal y ancho de canal. Esto les permite establecer la red de malla y enrutar datos a cualquiera de los sitios según sea necesario.
 
