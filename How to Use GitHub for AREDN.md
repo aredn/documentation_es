@@ -55,3 +55,5 @@ Ahora tu entorno local de GitHub sabe exactamente tanto de dónde viene original
 
 Y ya puedes contribuir con nuevas características comenzando de nuevo este ciclo.
 
+#### Revision del trabajo de otros:
+Para poder asegurarnos de que las contribuciones tienen la mayor calidad posible, es bueno que exista un proceso de revisión que permita introducir cambios de última hora. Esto se realiza durante la fase de "pull request". Antes de que sea aceptada, nuestra "pull request" queda abierta a comentarios. Para mas informacion sobre como hacer una revisión ver: 'https://help.github.com/es/github/collaborating-with-issues-and-pull-requests/commenting-on-a-pull-request' 
