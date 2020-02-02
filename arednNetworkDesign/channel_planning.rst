@@ -7,7 +7,7 @@ La sección anterior identificó los diferentes canales en cada banda de frecuen
 Sin embargo, a medida que más nodos se unen a la red o cuando varios nodos son: abbr: `colocados (mismo sitio físico)` y comparten el mismo canal, es posible que el rendimiento general de la red se degrade. Para un AREDN | trade | red para ampliar en tamaño y complejidad, la coordinación de frecuencias y la planificación de canales se vuelven cada vez más importantes. Para planificar el crecimiento futuro, los grupos de malla pueden necesitar dividir el tráfico de la red mediante la asignación de canales para áreas específicas o tipos de enlaces con el fin de garantizar que la red pueda soportar los servicios esperados.
 
 operación de red inalámbrica
---------------------------
+----------------------------
 
 Una red inalámbrica es un medio semidúplex compartido en el que solo debe transmitir una estación a la vez. En ese sentido, las operaciones inalámbricas son análogas a otros tipos de transmisiones de radio. Si dos estaciones conectan sus transmisores al mismo tiempo, interferirán entre sí en la medida en que ninguna de ellas reciba el mensaje de la otra. Es por eso que se implementan procedimientos de control de red para garantizar el acceso controlado a un canal de radio durante la comunicación de emergencia.
 
