@@ -76,8 +76,8 @@ Idealmente, las zonas de cobertura de RF (a veces llamadas "celdas") deberían u
 
 El mapa de cobertura de ejemplo muestra que se han asignado cuatro canales diferentes para lograr una cobertura amplia al segmentar áreas específicas en zonas para reducir la contención cocanal. Cabe señalar que incluso un plan de reutilización de canales como este puede no eliminar todas las instancias de contención. Por ejemplo, si un nodo está en los bordes exteriores de una zona de cobertura o se eleva muy por encima del nivel del suelo, sus transmisiones pueden propagarse a una celda distante utilizando el mismo canal. Las radios en la otra celda diferirán si escuchan las transmisiones del nodo original, aunque se originen en una celda diferente. Puede ser necesario cierto grado de experimentación para minimizar la contención y maximizar el rendimiento de la red.
 
-Nodos Colocados
-----------------
+Nodos que comparten ubicación
+-----------------------------
 
 .. image:: _images/collocated-nodes.png
    :alt: Collocated Nodes
@@ -92,7 +92,7 @@ En su configuración más básica para dos nodos colocados, se conecta un cable 
 
 Una ventaja adicional de la vinculación DtD es que puede vincular nodos que operan en diferentes bandas y canales. Los nodos que usan * Separación de canales * para segmentar el tráfico aún pueden pasar datos a altas velocidades a través de su enlace DtD y ser miembros de una sola red. En un sitio de torre como el que se muestra aquí, puede vincular nodos de 2,4 GHz, 3,4 GHz y 5,8 GHz a la misma red. De hecho, en un sitio concurrido como este, es una buena práctica utilizar el enlace DtD, porque de lo contrario la contención del canal de RF podría inutilizar la red.
 
-Idealmente, debe configurar sus nodos colocados para usar diferentes bandas y canales, y luego configurar enlaces DtD entre los nodos para garantizar que el tráfico se enrute de manera eficiente sin generar contención de RF o retrasos. : abbr: `OLSR (Protocolo de enrutamiento de estado de enlace optimizado)` siempre elegirá primero la ruta DtD al pasar el tráfico entre los nodos vinculados. Cada AREDN | trade | El nodo reconoce los paquetes entrantes etiquetados con: abbr: `VLAN (Red de área local virtual)` 2 como tráfico DtD.
+Idealmente, debe configurar sus nodos coubicados para usar diferentes bandas y canales, y luego configurar enlaces DtD entre los nodos para garantizar que el tráfico se enrute de manera eficiente sin generar embotellamientos de RF o retrasos. : abbr: `OLSR (Protocolo de enrutamiento de estado de enlace optimizado)` siempre elegirá primero la ruta DtD al pasar el tráfico entre los nodos vinculados. Cada AREDN | trade | El nodo reconoce los paquetes entrantes etiquetados con: abbr: `VLAN (Red de área local virtual)` 2 como tráfico DtD.
 .. image:: _images/dtd-linking.png
    :alt: DtD Linking
    :align: center
@@ -126,7 +126,7 @@ Si hay dos torres o áreas de cobertura celular dentro del alcance, configure lo
 
 Según el propósito de su red, intente crear rutas confiables a las ubicaciones donde se necesitan datos. Utilice la separación de canales y el enlace DtD de los nodos colocados para evitar la contención del canal de RF. Las bandas de 3,4 GHz y 5,8 GHz proporcionan los canales más compartidos para su uso en AREDN | trade | redes.
 
-* Si necesita una amplia cobertura local para un área de alto perfil, puede instalar antenas sectoriales en un sitio de la torre: por ejemplo, tres paneles con un ancho de haz de 120 grados cada uno. DtD vincula los sectores en el sitio de la torre y utiliza diferentes canales para cada sector para evitar la contención de canales.
+* Si necesita una amplia cobertura local para un área muy grande, puede instalar antenas sectoriales en una torre en un sitio alto: por ejemplo, tres paneles con un ancho de haz de 120 grados cada uno. Un enlace DtD vincula los sectores en la torre y se utilizarían diferentes canales para cada sector. De esta manera se evitaria la congestión en los canales.
 
 * Considere poner cada área de cobertura local en su propio canal para minimizar la interacción entre zonas.
 
