@@ -1,18 +1,19 @@
-==================================
-Downloading AREDN |trade| Firmware
-==================================
+======================================
+Descargando el Firmware AREDN |trade| 
+======================================
 
-Once you have selected and obtained a device, the next step is to choose the matching AREDN |trade| firmware image for that specific device. The `AREDN download page <http://downloads.arednmesh.org/firmware/ubnt/html/stable.html>`_ displays the most current firmware releases for every supported device.
+Una vez seleccionado y obtenido un dispositivo, el siguiente paso es elegir la imagen de firmware AREDN |trade| que coincida con ese dispositivo específico. La `página de descarga AREDN <http://downloads.arednmesh.org/firmware/ubnt/html/stable.html>`_ muestra las versiones de firmware más actuales para todos los dispositivos soportados.
 
-Locate your device model/version in the left column. Most manufacturers print the hardware version on the product package label. In some cases, though, you may need to start the device using the manufacturer's pre-installed firmware and navigate to the system information page to determine the hardware version.
+Localice modelo/versión de su dispositivo en la columna de la izquierda. Muchos fabricantes ponen la versión del hardware en la etiqueta de su producto. En otros casos, puede ser necesario arrancar el dispositivo con su firmware pre-instalado y navegar a la página de información del sistema para determinar la versión del hardware.
 
-There are two types of firmware images: one for the first-time replacement of the manufacturer's firmware, and the other for upgrades of nodes that are already running AREDN |trade| firmware.
+Hay dos tipos de imagen de firmware: una para la primera vez que se reemplaza el firmware del fabricante, y la otra para actualizaciones de los nodos que ya están funcionando con un firmware AREDN |trade|.
 
-* If you are loading AREDN |trade| firmware on a device for the first time you must download the *factory* firmware from the middle column. For Mikrotik devices you must also download the *sysupgrade* image from the righthand column.
+* Si está cargando el firmware AREDN |trade| en un dispositivo por primera vez, debe descargar el firmware *factory* desde la columna central. Para los dispositivos Mikrotik, debe descargar, además, la imagen *sysupgrade* de la columna de la derecha.
+* Si ya está ejecutando el firmware AREDN |trade| en el nodo, entonces seleccione el firmware *sysupgrade* de la columna de la derecha y después utilizará la interfaz web AREDN |trade| para realizar la actualización del firmware.
 
-* If you are already running AREDN |trade| firmware on the node then you will choose the *sysupgrade* firmware from the righthand column, and you will use the AREDN |trade| web interface to perform the firmware upgrade.
+Una vez que haya seleccionado la imagen de firmware correcta para su dispositivo, haga clic en el enlace para descargar el archivo a su ordenador local. Tome nota de la ubicación de descarga en su computadora, ya que necesitará usar esa imagen para instalar el firmware AREDN |trade| en su dispositivo.
 
-Once you have selected the correct firmware image for your device, click the link to download the image file to your local computer. Make a note of the download location on your computer, since you will need to use that image to install the AREDN |trade| firmware on your device.
+
 
 .. |trade|  unicode:: U+00AE .. Registered Trademark SIGN
    :ltrim:

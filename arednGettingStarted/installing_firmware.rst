@@ -1,24 +1,27 @@
-=================================
-Installing AREDN |trade| Firmware
-=================================
+======================================
+Instalación del Firmware AREDN |trade|
+======================================
 
-The steps for installing device firmware are documented on the AREDN |trade| website in the `Current Software <https://www.arednmesh.org/content/current-software>`_ section. Under the **Software** menu, select **Download** to reach the *Current Software* page.
+Los pasos para instalar el firmware en un dispositivo están documentados en el sitio web de AREDN |trade| en la sección `Current Software <https://www.arednmesh.org/content/current-software>`_. En el menú **Software**, seleccione **Download** para acceder a la página *Current Software*.
 
-There are two cases for installing AREDN |trade| firmware:
+Hay dos casos para instalar el firmware AREDN |trade|:
 
-1. If you already have an existing version of AREDN |trade| running on your device, then you can use your computer's web interface to navigate to **Setup > Administration > Firmware Update** to install your new firmware. This process will be explained in more detail in the **Advanced Configuration** section of this guide. Also, see *Firmware Upgrade Tips* in the **How-to Guides** section for additional information.
+1. Si ya tiene una versión de firmware de AREDN |trade| ejecutándose en su dispositivo, puede usar la interfaz web de su computadora para navegar a **Setup > Administration > Firmware Update** para instalar su nuevo firmware. Este proceso se explicará con más detalle en la sección **Configuración Avanzada** de esta guía. Para obtener información adicional vea también *Consejos de Actualizacióón de Firmware* en la sección **Guías Prácticas**.
+
 
 ----------
 
-2. If you are installing AREDN |trade| firmware on a device for the first time, each hardware platform may require a unique procedure.
+2. Si está instalando el firmware AREDN |trade| en un dispositivo por primera vez, cada plataforma de hardware puede requerir un procedimiento único.
 
    .. image:: _images/firmware-install.png
       :alt: Firmware Install Connections
       :align: center
 
-  The diagram above shows that your computer with the downloaded firmware image must be connected to the node using Ethernet cables in order to install the AREDN |trade| image. It is helpful to connect the computer and node through a simple Ethernet switch so that the switch can maintain the computer's link while the node is being rebooted.
 
-  Different node hardware will require different methods for installing the AREDN |trade| firmware. For Ubiquiti devices, your computer's TFTP client will connect to the node's TFTP server in order to upload the firmware image. For TP-LINK and GL-iNET devices, your computer's web browser will connect to the node's web server to upload the firmware image. For Mikrotik devices, your computer will run a remote boot server and the node's remote boot client will load its boot image from your computer. Refer to the specific procedures below for your node hardware.
+  El diagrama anterior muestra que su ordenador con la imagen de firmware descargada debe estar conectado al nodo mediante cable Ethernet para instalar la imagen AREDN |trade|. Es Útil conectar ordenador y nodo a través de un simple switch Ethernet para que éste pueda mantener el enlace con el ordenador mientras se reinicia el nodo.
+
+
+  Nodos con diferente hardware requerirán métodos diferentes para instalar el firmware AREDN |trade|. Para los dispositivos Ubiquiti, el cliente TFTP de su computadora se conectará al servidor TFTP del nodo para cargar la imagen del firmware. Para los dispositivos TP-LINK y GL-iNET, el navegador web de su ordenador se conectará al servidor web del nodo para cargar la imagen del firmware. Para los dispositivos Mikrotik, su ordenador ejecutará un servidor de arranque remoto y el cliente de arranque remoto del nodo cargará su imagen de arranque desde su computadora. Consulte los procedimientos específicos a continuación para el hardware de su nodo.
 
 Ubiquiti First Install Process
 ------------------------------
