@@ -1,21 +1,27 @@
 ========================
-Selecting Radio Hardware
+Seleccionando el Hardware de Radio
 ========================
 
-The amateur radio community has recognized the benefits of using inexpensive commercial :abbr:`WISP (Wireless Internet Service Provider)` radios to create AREDN |trade| networks. Each of these devices come with the vendor's firmware pre-installed, but by following a few simple steps this firmware can be replaced with an AREDN |trade| firmware image. Several open source software features have been adapted and enhanced to create the AREDN |trade| firmware, including `OpenWRT (Open Wireless Router) <https://en.wikipedia.org/wiki/OpenWRT>`_ and `OLSR (Optimized Link State Routing protocol) <https://en.wikipedia.org/wiki/Optimized_Link_State_Routing_Protocol>`_. The AREDN |trade| team builds specific firmware images tailored to each type or version of radio, and the current list of supported devices is found on the AREDN |trade| website in the `Supported Platform Matrix <https://www.arednmesh.org/content/supported-platform-matrix/>`_.
+La comunidad de radioaficionados ha reconocido los beneficios de utilizar radios comerciales de bajo costo: abbr: `WISP (Wireless Internet Service Provider)` para crear la red AREDN | trade |. Cada uno de estos dispositivos viene con su firmware del fabricante preinstalado, pero siguiendo unos sencillos pasos, este firmware se puede reemplazar con una imagen de firmware hecha por el equipo de AREDN | trade |. Se han adaptado y mejorado varias funciones de software de código abierto para crear esta versión de firmware, basándose en `OpenWRT (enrutador inalámbrico abierto) <https://en.wikipedia.org/wiki/OpenWRT>` _ y `OLSR (protocolo de enrutamiento de estado de enlace optimizado) <https://en.wikipedia.org/wiki/ Optimized_Link_State_Routing_Protocol> `_. El equipo de AREDN | trade | crea imágenes de firmware específicas adaptadas a cada modelo radio, y mantienen una lista de los dispositivos compatibles en: `Matriz de plataformas soportadas <https://www.arednmesh.org/content/supported-platform-matrix/>` _.
 
-When selecting a device for your AREDN |trade| hardware there are several things to consider in your decision.
+Para seleccionar tu dispositivo para AREDN |trade| deberías de tener en consideración lo siguiente:r decision.
 
-* Radios should be purchased for the specific frequency band on which they will operate. Currently AREDN |trade| supports devices which operate in the 900 MHz, 2.4 GHz, 3.4 GHz, and 5.8 GHz bands.
-* Many devices come with an integrated dual-polarity :abbr:`MIMO (Multiple Input-Multiple Output)` antenna which helps to mitigate multipath propagation issues.
-* Radios can be purchased separately from the antenna, so it is possible to have more than one antenna option for a radio in order to optimize AREDN |trade| nodes for varying deployment conditions.
-* Costs of devices range from $50 to several hundred dollars for a complete node, so there are many options even for the budget-conscious operator.
-* Some older or lower cost devices have a limited amount of onboard memory, but firmware images continue grow in size and functionality. Consider purchasing a device with more memory over one with less memory.
-* Check the maximum power output of the device, since some devices have lower power capabilities.
+* Las radios deben de comprarse teniendo en cuenta la banda de frecuencias en la que van a operar * Actualmente AREDN |trade| soporta dispositivos en las bandas de: 900 MHz, 2.4 GHz, 3.4 GHz y 5.8 GHz.
 
-One of the best sources of detailed device information is a manufacturer's datasheet, usually available for download from the manufacturer's website. Currently AREDN |trade| supports over fifty device models from manufacturers including GL-iNET, Mikrotik, TP-LINK, and Ubiquiti Networks.
+* Varios dispositivos vienen con un sistema incorporado de :abbr:`MIMO (Multiple Input-Multiple Output)`, esto ayuda a reducir los problemas de multipath que son típicos en ciudad.
 
-If you are just getting started with AREDN |trade| you can easily begin with one of the low-cost devices that comes with an integrated antenna and a :abbr:`PoE (Power over Ethernet)` unit. If you are expanding your AREDN |trade| network with more sophisticated equipment, you may choose a standalone radio attached to any of several kinds of high-gain antennas.
+* La mayoria de radios pueden comprarse de forma separada a la antena, así que es posible tener más de una opción de antena para cada radio. De esta manera podremos adaptar el comportamiento de nuestros dispositivos AREDN |trade| a cada ocación.
+
+* El coste de los dispositivos puede ser desde menos de 50€ a varios cientos de euros por un nodo completo. Hay una opción para cada bolsillo. El mercado de segunda mano para este tipo de radios es muy activo. 
+
+* Algunos dispositivos antiguos tienen una cantidad limitada de recursos (ya sea en forma de memoria de programa o ram) que podrían traducirse en el abandono del soporte por parte del equipo de AREDN |trade|. Ten esto en cuenta a la hora de elegir un dispositivo en la matriz de plataformas soportadas. 
+
+* Comprueba que la potencia de radio del dispositivo sea suficiente para el enlace que quieres hacer, teniendo en cuenta la normativa local.
+
+Uno de las mejores fuentes de información detallando las caracteristicas técnicas de cada dispositivo es su fabricante. Actualmente AREDN |trade| soporta más de cincuenta modelos, incluyendo fabricantes como: GL-iNET, Mikrotik, TP-LINK, o Ubiquiti Networks.
+
+Si estás empezando a interesarte por AREDN |trade| puedes empezar fácilmente con uno de los dispositivos de menor coste, habitualmente con la antena integrada y :abbr:`PoE (Power over Ethernet)`. Ya llegará eel momento de expandir tu red con equipo más sofisticado.
+
 
 .. note:: See the **Network Design Guide** for more information about constructing robust mesh networks.
 

@@ -1,8 +1,8 @@
 ===================
-Node Status Display
+Estado del Nodo
 ===================
 
-Once you have completed the initial setup on your AREDN |trade| node, you can connect your computer to the LAN port on the :abbr:`PoE (Power over Ethernet)` and navigate to the following URL: ``http://localnode``. You will be redirected to the **Node Status** page as shown below.
+Una vez se ha completado la configuración inicial de tu nodo de AREDN |trade|, puedes conectar tu ordenador al puerto de LAN del inyector :abbr:`PoE (Power over Ethernet)` y navegar a ``http://localnode``. Serás redirigido a la página de **Estado de Nodo** tal y como se muestra en la web inferior.
 
 ----------
 
@@ -12,38 +12,42 @@ Once you have completed the initial setup on your AREDN |trade| node, you can co
 
 ----------
 
-Below the node name bar there are several controls.
+Debajo de la barra con el nombre del nodo, hay varias secciones: 
 
-**Help**
-   Opens a new window or tab to display the node help page.
-
+**Ayuda**
+   Abre una nueva ventana para mostrar la ayuda.
+   
 **Refresh**
-   Updates the Node Status page with current data.
+   Actualiza la información mostrada con datos actuales.
 
 **Mesh Status**
-   Opens the **Mesh Status** page showing the neighbor nodes and remote nodes visible on the mesh network, as well as what services are being provided by those nodes.
+   Abre la página de **Estado de la Red**, mostrando los nodos cercanos y remotos. Además, muestra los servicios expuestos en esos nodos. 
 
-**WiFi Scan**
-   Displays a list of other 802.11 signals that your node can see. The 802.11 signals may include Access Points, neighbor nodes, and other mesh networks (foreign ad-hoc networks).  WiFi Scan only finds devices on the same channel width as your node is configured to.  When installing at a new location, it is best practice to scan on 5, 10, and 20MHz channels to find all 802.11 signals in range.  This information will help to pick a channel clear of other interference.  When multiple ad-hoc networks are visible (with different SSIDs or channels), the ID of each 802.11 ad-hoc *network* is displayed but not the individual nodes. There is also an automatic scan mode, but running a Wifi Scan continuously is not recommended, particularly if the node is actively routing traffic.  The scan is passive, or only listens for other beacons through all channels, and risks loss of data on the assigned channel.  Wifi Scan does not transmit probes on every channel in passive mode, thus no risk of interfering with Radar stations on DFS channels, or other unintended transmissions.  Multiple attempts of Wifi Scan will be necessary to find all devices in range.
+**Escaneo WiFi**
+   Muestra la lista de otras señales 802.11 (WiFi) que se reciben desde tu nodo. Estas señales incuyen Puntos de Acceso, el WiFi del vecino, y otras redes. Esta función solo muestra dispositivos con la misma configuración de canal (frecuencia y ancho de canal) que la de nuestro nodo. Si estamos instalando en una nueva hubicación, es buena práctca escanear con  ancho de canal de 5, 10, and 20MHz en busca de posibles interferencias. Cuando hay más de una red accesible (con diferente SSID o canal), los ID de cada nodo de dicha ned se mostrarán de forma resumida. Además, hay un modo automático de escaneo, pero hacerlo de forma continuada no está recomendado; especialmente si nuestro nodo tiene tráfico.
+  El escaneo de AREDN es pasivo, solo busca los paquetes que anuncian redes cercanas en los canales. Esto implica que puede perderse alguno. WiFiScan no hace escaneos activos, por lo que no se corre el riesgo de interferir con estaciones de Radar ni DFS cercanos. Varios intentos de escaneo pueden ser necesarios para encontrar todos los dispositivos al alcance.
 
-**Setup**
-   Navigates to the **Setup** pages for your node. You will need to supply a username and password to access those pages. The username is always ``root``, while the password is the one you set during initial node setup. If the node has not yet been configured, the password is ``hsmm``.
+**Configuración**
+  Abre la página de configuración de tu nodo. Necesitarás usuario y contraseña para acceder a esta página. El usuario siempre es ``root``, y la contraseña se configuró la primera vez que se utilizó el nodo. Si el nodo no ha sido configurado nunca, ca contraseña por defecto es ``hsmm``.
 
-**Select Theme**
-   AREDN |trade| firmware has several built-in display themes. The default ``aredn`` theme has a gray background with black and red text. The ``black_on_white`` theme is often chosen because it provides the best screen contrast on a computer exposed to direct sunlight. ``red_on_black`` is much better suited for nighttime use since it helps preserve night vision.
-
-Node Settings Summary
+**Selección de Tema**
+   El firmware AREDN |trade|tiene múltiples temas incluídos por defecto. El standard es ``aredn``, pero puedes probar otros que se ajusten mejor a tus preferencias. 
+   
+   
+Resumen de los ajustes del Nodo
 ---------------------
 
-The area under the display controls shows both configuration and network status information. The left column contains the IP address details for the network interfaces on this node, as well as the SSID, channel, and bandwidth settings.
+El área bajo los controles muestra dos cosas: En el lado izquierdo contiene los detalles de configuración de este nodo. Concretamente, las direcciones ip de cada interfaz, SSID, frecuencia y ancho de canal.
 
-The right column contains the Signal Strength readings and other attributes of your node. The **Signal/Noise/Ratio** shows the strongest neighbor radio signal strength in :abbr:`dBm (decibels relative to one milliwatt)` from all connected stations, and it is available only when the node is connected by :abbr:`RF (Radio Frequency)` to a mesh network. Click these links for further information about `Signal to Noise Ratio <https://en.wikipedia.org/wiki/Signal-to-noise_ratio>`_ and values measured in `decibels <https://en.wikipedia.org/wiki/Decibel>`_.
+La columna derecha contiene la intensidad de la sieñal recibida y otros valores de este nodo. La **Relación Señál a Ruido** muestra la señal del nodo vecino más fuerte en :abbr:`dBm (decibels relative to one milliwatt)`, y estará disponible solo cuando el nodo esté interconectado por :abbr:`RF (Radio Frequency)` a la red AREDN | trade |.
 
-Below the Signal Strength readings are the node's **Firmware Version** and network type. The **System Time** is displayed, as well as the **Uptime**, or time since the last reboot. Nodes have no internal battery or realtime clock, so the time is reset every time the node is booted. If an Internet connection becomes available, the internal :abbr:`NTP (Network Time Protocol)` client will connect with a time server to sync the node's time.
+Bajo la lectura de señal, están los datos del sistema tales como: La versión del Firmware, el tipo de red, la hora del nodo, y el tiempo que lleva sin ser reiniciado. Los nodos no tienen ni batería ni un reloj interno. Esto provoca que la hora se pierda cada vez que se reinicia. Si hay salida a internet, tomará la hora usando el protocolo :abbr:`NTP (Network Time Protocol)`
 
-The **Load Average** is the average number of processes that have been running on the node for the last 1, 5, and 15 minutes. **Free Space** tells you how much space is available on local storage devices. Flash is the internal non-volatile storage where the operating system, configuration files, and software packages are kept. /tmp is a filesystem in memory that stores the node's current status and various temporary files. **Memory** is the amount of :abbr:`RAM (Random Access Memory)` available for running processes on the node.
+La **Carga Media** es la media del número de procesos que tienen lugar en el nodo en los últimos 1, 5 y 15 minutos. 
+El **Espacio Libre** muestra cuanta memoria nos queda en el dispositivo.  Esta es la memoria flash del dispositivo, que tiene permanencia entre reinicios. Aquí quedan guardadas las configuraciones y los paquetes de software. 
+La **Memoria** nos indica la cantidad de memoria :abbr:`RAM (Random Access Memory)` disponible en el nodo.
 
-The :abbr:`OLSR (Optimized Link State Routing protocol)` **Entries** show the total number of entries in the routing table, as well as the number of nodes currently connected to the mesh network.
+Las **Entradas :abbr:`OLSR (Optimized Link State Routing protocol)`** Muestran el total de nodos en la tabla de rutas actual. Estos son los nodos de la red AREDN con los que tenemos conectividad. 
 
 Signal Charts
 -------------

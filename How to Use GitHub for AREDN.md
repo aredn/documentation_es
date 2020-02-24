@@ -1,58 +1,59 @@
-# How to Use GitHub
-## Contributing to the AREDN Project
+# Cómo usar GitHub
+## Colaborando con el proyecto de AREDN
 
 
-### Create Your GitHub Account
+### Creando una cuenta de GitHub
+Para contribuir con el proyecto de AREDN, primero debes registrarte en GitHub. Esto es gratuito y fácil, lo puedes hacer siguiendo los siguientes pasos:
 
-To contribute to the AREDN project you first must create your own GitHub account. This is free and easy to do by following these steps:
+1. Abre en tu navegador la URL de GitHub: `https://github.com`.
+2. Esto nos lleva a una web donde podemos registrarnos, introducimos un username, email, y contraseña. Sugerimos incluir el indicativo en el usuario. Ya tenemos nuestra cuenta.
+3. En la página de GitHub, 'clickamos' en el botón que dice `Sign In` para entrar con nuestra cuenta.
+4. Ya puedes buscar el proyecto de AREDN directamente en el buscador de la barra superior. Esto nos devolverá todos los resultados relacionados con el proyecto. O si solo queremos ir directamente al repositorio de firmwares podemos visitar: `https://github.com/aredn/aredn_ar71xx`.
 
-1. Open your web browser and navigate to the GitHub URL `https://github.com`.
-2. Click the `Sign Up` button and enter a username, email, and password. We suggest using your callsign as the username.
-3. On the GitHub website, click the `Sign In` button and enter your username or email, followed by your github password.
-4. You can enter "aredn" into the search bar to find all repositories related to AREDN, or if you want to contribute directly to the AREDN firmware you can type this URL into your web browser: `https://github.com/aredn/aredn_ar71xx`.
+### Entendiendo el ciclo de trabajo en GitHub:
 
-### Understanding GitHub Workflow
+El proceso de contribución y monitorizazión de los cambios en AREDN es crucial. Todo el código es mantenido en el repositorio MASTER de AREDN en GitHub. Para contribuir con una posible mejora al código del proyecto, debes primero hacer un FORK del repositorio MASTER de AREDN en GitHub. Esto creará una copia del repositorio en tu cuenta, sobre la que podrás hacer cambios sin afectar al resto de usuarios. Después CLONAR tu repositorio a tu máquina de desarollo para hacer los cambios y pruebas. 
 
-The process of contributing and tracking changes to AREDN is circular. Code is maintained in the AREDN Master repository on GitHub. To contribute a potential code update, you must first FORK the AREDN master repository to your own GitHub account. You then CLONE your copy of the code from your GitHub repository to your own local computer. Make and test any changes you want to contribute using your local computer's copy of the code.
-
-When you are satisfied with your changes, COMMIT them to your local computer's repository, then PUSH those local changes to your copy of the code on your own GitHub account. Finally, create a PULL REQUEST, which tells the AREDN development team that you would like your changes to be reviewed for inclusion in the AREDN Master repository.
+Cuando estes satisfecho con tu trabajo, haz un COMMIT a tu copia local. Porfavor, se descritivo con el mensaje obligatorio adjunto a tu trabajo. Hace categorizar y evaluar los cambios más fácil. Ya , puedes hacer un PUSH a tu repositorio remoto para subirlo a tu cuenta de GitHub. Por último, solo faltaría crear un PULL REQUEST para notificar a los administradores del repositorio oficial que te gustaría que absorbieran tus cambios.
 
 ![GitHub Workflow](_images/GitHub-workflow.png)
 
-#### One-time Repository Setup:
+#### Montando Nuestro Repositorio de trabajo:
 
-1. Login to your own GitHub account and navigate in your browser to `https://github.com/aredn/aredn_ar71xx`
-2. Click the `Fork` button on the upper right side of the page.  You now have a copy of the AREDN source code on your own GitHub account.
-3. Go to your local computer and copy your fork of the AREDN source code: `git clone https://github.com/myCall/aredn_ar71xx`
-4. `cd aredn_ar71xx`  This directory contains your local copy of the AREDN source code. The following commands will be executed while you are in this directory or its subdirectories.
-5. `git remote add aredn https://github.com/aredn/aredn_ar71xx`  
+1. Haz Log-in en tu cuenta de GitHub, y ve a `https://github.com/aredn/aredn_ar71xx`
+2. Haz click en el botón de la parte superior derecha que dice `Fork`. Ya tienes una copia del código fuente de AREDN en tu cuenta de GitHub.
+3. Ve a tu ordenador de desarollo y haz una copia del código (deberás haber instalado git): `git clone https://github.com/TuUsuarioVaEscritoAqui/aredn_ar71xx`
+4. Ve al directorio `aredn_ar71xx`, ahora contiene tu copia local del proyecto oficial: `cd aredn_ar71xx`.
+5. Una vez dentro del proyecto, podemos hacerle saber cual es el repositorio de origen inicial con:`git remote add aredn https://github.com/aredn/aredn_ar71xx`  
 
-Now your local environment knows about both the master code repository and your forked copy on your GitHub account.
+Ahora tu entorno local de GitHub sabe exactamente tanto de dónde viene originalmente el código, cómo dónde tenemos nuestra copia en GitHub.
 
-#### Ongoing Development Cycle:
+#### Proceso Cíclico de Desarollo:
 
-1. Update your local environment with the latest code changes from the rest of the community, which will include any changes you had previously submitted.   *Caution:*  never make code changes directly on the `develop` branch.  This will result in inconsistencies between the main repository and your repository, requiring a force-remove of any changes you have made.
-	1. `git checkout develop`
-	2. `git pull aredn develop`
-2. Create a git code branch to fix a bug or implement a new feature:
+1. Actualiza tu entorno local con los últimos cambios realizados por el resto de la comunidad. Esto inculuirá cualquier cambio que tu hayas propuesto. *Cuidado:* Nunca hagas cambios directamente sobre la rama `develop`. Esto probablemente cause inconsistencias entre el repositorio principal y el tuyo.
+	1. `git checkout develop` # Con esto nos cambiamos a la rama de desarollo.
+	2. `git pull aredn develop` # Con esto nos sincronizamos los últimos cambios.
+2. Creamos nuestra propia rama local dónde implementar nuevas funcionalidades o arreglar bugs:
 	1. `git checkout -b my-wiz-bang-feature-name`
-3. Make your changes and test them.
-4. When ready to submit changes, check to see whether they still work with code others have recently submitted. In GitHub terminology, “pull” down the latest changes and “rebase” or move your code on top of the latest. In this process you might find conflicts with someone else’s code, making further merge edits necessary.
-	1. `git stash` to stash the changes still in process.
+3. Realiza tus cambios y pruébalos. 
+4. Cuando estes listo para subir tus cambios, comprueba que siguen funcionando con los últmos cambios. En la terminología de GitHub haz un "pull" y "rebasa" para aplicar tus cambios los últimos.  
+	1. `git stash` Para salvar nuestros cambios sin aplicarlos.
 	2. `git checkout develop`
 	3. `git pull aredn develop`
 	4. `git checkout my-wiz-bang-feature-name`
-	5. `git rebase develop` to move your branch and changes on top of the latest code others have submitted.
-	6. `git stash pop` to reapply your stashed changes
-	7. Resolve any conflicts that need to be merged if warned in the step above.
-	8. Final build and validation that your changes work on top of the latest changes from all of the AREDN contributors.
-5. `Commit` your changes to your local repository, then `Push` the changes to your own GitHub repository.
-	1. `git commit`
+	5. `git rebase develop` Para mover nuestro trabajo a la rama con los ultimos cambios.
+	6. `git stash pop` Aplicamos nuestros cambios
+	7. Resolveremos cualquier posible conflicto con los nuevos cambios si somos avisados de alguno. 
+	8. Comprobamos el correcto funcionamiento una vez más.
+5. Ya podemos hacer un `Commit` con nuestros cambios a nuestro repositorio local. Para lueo hacer un `Push` a nuestra cuenta de GitHub.
+	1. `git commit -m "Descripcion de los cambios realizados"`
 	2. `git push origin my-wiz-bang-feature-name`
-6. Create a `Pull Request` (PR) to the AREDN master repository by browsing to `github.com/myCall/aredn_ar71xx`, then select the my-wiz-bang-feature-name branch. Click the `New Pull Request` button to generate your Pull Request. Others can now review your code, test it, and give feedback. If feedback is given and you need to make changes, go back to step 3.
-7. Once your changes have been accepted into the AREDN master repository, delete your branch:
-	1. On your local repository: `git branch -D my-wiz-bang-feature-name`
-	2. On your forked copy of your GitHub repository: `git push origin --delete my-wiz-bang-feature-name`
+6. Para crear un `Pull Request` (PR) al repositorio MASTER de AREDN, vamos a `github.com//TuUsuarioVaEscritoAqui/aredn_ar71xx`, después seleccionamos la rama my-wiz-bang-feature-name. Hacemos click en el botón de `New Pull Request`. Ahora otros pueden revisar tus cambios, probarlos y darte su opinión. Si se decide que debes de hacer cambios, vuelve al paso 3. 
+7. Una vez tus cambios son aceptados, puedes borrar tu rama:
+	1. En tu copia local: `git branch -D my-wiz-bang-feature-name`
+	2. En el Fork de tu cuenta de GitHub: `git push origin --delete my-wiz-bang-feature-name`
 
-You can continue contributing new features by beginning the development cycle again, starting with step 1 on the Ongoing Development Cycle.
+Y ya puedes contribuir con nuevas características comenzando de nuevo este ciclo.
 
+#### Revision del trabajo de otros:
+Para poder asegurarnos de que las contribuciones tienen la mayor calidad posible, es bueno que exista un proceso de revisión que permita introducir cambios de última hora. Esto se realiza durante la fase de "pull request". Antes de que sea aceptada, nuestra "pull request" queda abierta a comentarios. Para mas informacion sobre como hacer una revisión ver: 'https://help.github.com/es/github/collaborating-with-issues-and-pull-requests/commenting-on-a-pull-request' 
