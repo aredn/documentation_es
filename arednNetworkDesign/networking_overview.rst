@@ -1,31 +1,30 @@
-===================
-Networking Overview
-===================
+=================
+Resumen de redes
+=================
 
-This **Network Design Guide** will discuss some of the useful principles for creating robust data networks as a service both to the amateur radio hobby and the community at large. An AREDN |trade| network is able to serve as the transport mechanism for the applications people rely upon to communicate with each other in the normal course of their business and social interactions, including email, chat, phone service, document sharing, video conferencing, and many other useful programs. Depending on the characteristics of the implementation, this digital data network can operate at near-Internet speeds with many miles between network nodes.
+Esta ** Guía de diseño de red ** analizará algunos de los principios útiles para crear redes de datos robustas como un servicio tanto para los radioaficionados  como para la comunidad en general. Un AREDN | trade |  red puede servir como mecanismo de transporte para las aplicaciones en las que las personas confían para comunicarse entre sí en el curso normal de sus interacciones comerciales y sociales, incluido el correo electrónico, el chat, el servicio telefónico, el intercambio de documentos, la videoconferencia y muchos otros programas útiles. . Dependiendo de las características de la implementación, esta red de datos digitales puede operar a velocidades cercanas a Internet con muchas millas entre los nodos de la red.
 
-There are a variety of ways to interconnect AREDN |trade| nodes, but the most important question that should be answered is *"What is the purpose for this particular network?"* The specific requirements of your situation will drive the design of your data network. For example, consider the following issues.
+Hay una variedad de formas de interconectar AREDN | trade | nodos, pero la pregunta más importante que debe responderse es * "¿Cuál es el propósito de esta red en particular?" * Los requisitos específicos de su situación impulsarán el diseño de su red de datos. Por ejemplo, considere los siguientes problemas:
 
-**Temporary or Permanent**
-  Is your network being deployed as a short-term communication mechanism, possibly to meet the needs of a day-long event or a training exercise? If so, then several amateur radio operators with portable nodes can quickly establish an *ad hoc* network with a specific set of services to meet the communication needs for that situation. Those nodes and computers can probably operate from portable batteries, without any external power dependencies for such a limited-time deployment.
+**Temporal o Permanente**
+¿Se está desplegando su red como un mecanismo de comunicación a corto plazo, posiblemente para satisfacer las necesidades de un evento de un día o un ejercicio ? Si es así, varios radioaficionados con nodos portátiles pueden establecer rápidamente una red * ad hoc * con un conjunto específico de servicios para satisfacer las necesidades de comunicación para esa situación. Esos nodos y ordenadores probablemente pueden funcionar con baterías portátiles, sin ninguna dependencia de energía externa para un despliegue temporal.
 
-  Is your network intended as a long-term or permanent infrastructure to serve the on-going communication needs of a local area or region? If so, then a more sophisticated network topology must be designed and constructed to meet those long-term requirements. More robust or ruggedized radio equipment may be necessary, and more reliable AC power or off-grid renewable energy resources will be required to ensure consistent operations.
+¿Su red está pensada como una infraestructura a largo plazo o permanente para atender las necesidades de comunicación en curso de un área o región local? Si es así, entonces se debe diseñar y construir una topología de red más sofisticada para cumplir con esos requisitos a largo plazo. Puede ser necesario un equipo de radio más robusto o resistente, y se requerirá una alimentación  más confiable o recursos de energía renovable fuera de la red para garantizar operaciones consistentes.
 
-**Geography and Terrain**
-  Where is data communication needed? Are there specific locations where network nodes are required? What level of :abbr:`RF (Radio Frequency)` coverage will be needed in order to reach those locations? The places that the network must reach will determine the number and position of AREDN |trade| nodes.
+**Geografia y terreno**
+¿Dónde se necesita la comunicación de datos? ¿Hay ubicaciones específicas donde se requieren nodos de red? ¿Qué nivel de: abbr: cobertura de 'RF (Radio Frequency)' será necesaria para llegar a esos lugares? Los lugares a los que debe llegar la red determinarán el número y la posición de AREDN | trade | nodos
 
-  What are the geographical characteristics of the area across which your data network will operate? Different types of terrain may require specific types of network connections in order to adequately cover the region over which data communications are needed. More demanding terrain may require a larger number of intermediate nodes or possibly larger higher-gain antenna systems and mounting structures.
+¿Cuáles son las características geográficas del área a través de la cual operará su red de datos? Los diferentes tipos de terreno pueden requerir tipos específicos de conexiones de red para cubrir adecuadamente la región sobre la cual se necesitan comunicaciones de datos. Un terreno más exigente puede requerir una mayor cantidad de nodos intermedios o posiblemente sistemas de antena y estructuras de montaje de mayor ganancia.
 
-**Expansion and Growth**
-  Will your network need to expand or adapt to changing conditions over time? Mesh networks are ideally suited for *ad hoc* growth and least cost routing based on the availability of nodes. As more devices are added to the network, however, the topology becomes more complicated and data traffic may be routed through multiple "hops" in order to reach its intended destination. This could result in increased latency on the network, with some network segments becoming almost unusable if application response time thresholds cannot met.
+**Expanción y crecimiento de la red **
+¿Su red necesitará expandirse o adaptarse a las condiciones cambiantes con el tiempo? Las redes de malla son ideales para el crecimiento * ad hoc * y el enrutamiento de menor costo basado en la disponibilidad de nodos. Sin embargo, a medida que se agregan más dispositivos a la red, la topología se vuelve más complicada y el tráfico de datos se puede enrutar a través de múltiples "saltos" para llegar a su destino previsto. Esto podría resultar en una mayor latencia en la red, con algunos segmentos de red que se vuelven casi inutilizables si no se pueden alcanzar los umbrales de tiempo de respuesta de la aplicación.
 
-**Applications and Throughput**
-  What network programs, applications, or services should be provided in order to fulfill the purpose for this network? Each application will generate a certain amount of data traffic, and some programs or services are more data-intensive than others. The network needs to be designed to adequately pass the traffic for the required applications.
+**Aplicaciones y rendimiento**
+¿Qué programas, aplicaciones o servicios de red se deben proporcionar para cumplir el propósito de la red? Cada aplicación generará una cierta cantidad de tráfico de datos, y algunos programas o servicios requieren más datos que otros. La red necesita ser diseñada para pasar adecuadamente el tráfico para las aplicaciones requeridas.
 
-  How many simultaneous users will be generating network traffic at different times? As the number of users increases, the amount of data traversing the network will also increase. In addition, with an increasing number of nodes on the network there will be a corresponding increase in the amount of `OLSR (Optimized Link State Routing protocol) <https://en.wikipedia.org/wiki/Optimized_Link_State_Routing_Protocol>`_ traffic that is necessary to maintain the mesh network. An AREDN |trade| network should be designed to handle the expected workload.
+¿Cuántos usuarios simultáneos generarán tráfico en la red y en diferentes momentos? A medida que aumenta el número de usuarios, también aumentará la cantidad de datos que atraviesan la red. Además, con un número creciente de nodos en la red, habrá un aumento correspondiente en la cantidad de `OLSR (protocolo de enrutamiento de estado de enlace optimizado) <https://en.wikipedia.org/wiki/Optimized_Link_State_Routing_Protocol>` _ tráfico que es necesario para mantener la red de malla. Un AREDN | trade | red debe estar diseñada para manejar la carga de trabajo esperada.
 
-With these issues in mind, it is always best to keep your network as simple as possible and to include only those services which are required. Be sure to design your network so that it accomplishes its mission and suits its intended purpose.
-
+Con estos factores en mente, siempre es mejor mantener la red lo más simple posible e incluir solo aquellos servicios que se requieren. Asegúrese de diseñar su red para que cumpla su misión y se adapte a su propósito.
 
 
 .. |trade|  unicode:: U+00AE .. Registered Trademark SIGN
