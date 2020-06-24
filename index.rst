@@ -2,29 +2,29 @@
    :alt: AREDN
    :align: right
 
-===========================
-AREDN |trade| Documentation
-===========================
+==============================
+Documentación de AREDN |trade|
+==============================
 
-:Version: 3.19.3.0
+:Version: 3.20.3.0
 
-This documentation set consists of several sections which are shown in the navigation list.
+Esta documentación está compuesta de diferentes secciones, las cuales se muestran en el panel de navegación.
 
-* The **Getting Started Guide** walks through the process of configuring an AREDN |trade| radio node to be part of a mesh network.
-* The **Network Design Guide** provides background information and tips for planning and deploying a robust mesh network.
-* The **Applications and Services Guide** discusses the types of programs or services that can be used across a mesh network.
-* The **How-to Guides** provide tips and techniques for various tasks.
-* Finally, the **Appendix** contains supplementary information.
+* La **Guía de inicio** recorre el proceso de configuración de un nodo radio de AREDN |trade| como parte de una red mallada.
+* La **Guía de diseño de red** proporciona información general y consejos para planificar y desplegar una red mallada de forma robusta.
+* La **Guía de aplicaciones y servicios** analiza los tipos de programas o servicios que pueden ser utilizados a través de la red mallada.
+* Las **Guías de procedimiento (`How-to`)** contienen consejos y técnicas referentes a conceptos variados.
+* Por último, en el **Apéndice** se incluye información suplementaria.
 
-If you wish to locate specific topics within the documentation, you can type keywords into the *Search docs* field to display a list of items which match your search.
+Si necesitas localizar algún apartado concreto dentro de la documentación, puedes buscar por palabras clave utilizando el campo *Search docs*. Este mecanismo te mostrará el listado de elementos que se ajustan a los criterios de búsqueda.
 
-If you would like to see the documentation for a specific AREDN |trade| release, click on the **Read the Docs** label at the bottom of the navigation bar. This label shows the version you are currently viewing, but clicking the label bar opens a panel with several other options. Here you may choose to view another version of the documentation, and you can also download the entire documentation set in any of several formats *(PDF, ePub, HTML)* for offline use.
+Por otro lado, si necesitas revisar la documentación específica de una versión de AREDN |trade|, pincha en el botón etiquetado como `Read the Docs`, situado al final del panel de navegación. Se te mostrarán diferentes opciones, entre las que se encuentran consultar versiones anteriores, o descargar la documentación para consultar offline en cualquiera de los formatos soportados (`PDF`, `Epub`, `HTML`, ...) 
 
-.. note:: AREDN |trade| is a registered trademark of *Amateur Radio Emergency Data Network, Inc.*
+.. note:: AREDN |trade| es una marca registrada de *Amateur Radio Emergency Data Network, Inc.*
 
 .. toctree::
    :maxdepth: 1
-   :caption: Getting Started Guide
+   :caption: Guía de inicio
    :hidden:
 
    arednGettingStarted/aredn_overview
@@ -38,7 +38,7 @@ If you would like to see the documentation for a specific AREDN |trade| release,
 
 .. toctree::
    :maxdepth: 1
-   :caption: Network Design Guide
+   :caption: Guía de diseño de red
    :hidden:
 
    arednNetworkDesign/networking_overview
@@ -49,7 +49,7 @@ If you would like to see the documentation for a specific AREDN |trade| release,
 
 .. toctree::
    :maxdepth: 1
-   :caption: Applications and Services Guide
+   :caption: Guía de aplicaciones y servicios
    :hidden:
 
    arednServicesGuide/services_overview
@@ -63,10 +63,12 @@ If you would like to see the documentation for a specific AREDN |trade| release,
 
 .. toctree::
    :maxdepth: 1
-   :caption: How-to Guides
+   :caption: Guías de procedimiento
    :hidden:
 
    arednHow-toGuides/firmware_upgrade
+   arednHow-toGuides/home-router-connection
+   arednHow-toGuides/local-package-repo
    arednHow-toGuides/siso-mimo
    arednHow-toGuides/puttygen_ssh_keys
    arednHow-toGuides/radio_mobile_settings
@@ -75,7 +77,7 @@ If you would like to see the documentation for a specific AREDN |trade| release,
 
 .. toctree::
    :maxdepth: 1
-   :caption: Appendix
+   :caption: Apéndice
    :hidden:
 
    appendix/freq_charts

@@ -1,32 +1,43 @@
 ======================
-Additional Information
+Información adicional
 ======================
 
-Additional information about the AREDN |trade| project can be found at the links below.
+Puedes encontrar información adicional acerca del proyecto AREDN |trade| en los siguientes enlaces.
 
-* `AREDN homepage <https://www.arednmesh.org/>`_
-* `AREDN forums <https://www.arednmesh.org/forum>`_
+* `Página principal de AREDN <https://www.arednmesh.org/>`_
+* `Foro oficial de AREDN <https://www.arednmesh.org/forum>`_
 
 
-Contributing AREDN |trade| Documentation
-----------------------------------------
+Contribuyendo con la documentación de AREDN |trade|
+---------------------------------------------------
 
-If you are interested in contributing to the rapidly growing set of AREDN |trade| documentation you can easily do so on GitHub. To contribute to the AREDN |trade| project you first must create your own GitHub account. This is free and easy to do by following these steps:
+Si estás interesado en contribuir con cualquier aspecto del proyecto en auge AREDN |trade|, puedes hacerlo fácilmente a través de GitHub. Para contribuir con el proyecto AREDN |trade|, primero debes registrarte en GitHub, algo gratuito y sencillo.
 
-1. Open your web browser and navigate to the `GitHub URL <https://github.com>`_.
-2. Click the ``Sign Up`` button and enter a username, email, and password. We suggest using your callsign as the username.
-3. On the GitHub website, click the ``Sign In`` button and enter your username or email followed by your GitHub password.
-4. Navigate on GitHub to the AREDN |trade| documentation repository: https://github.com/aredn/documentation.
-5. Click the ``Fork`` button at the upper right corner of the page. After this process completes, you will have your own copy of the AREDN |trade| documentation files on your GitHub account.
-6. Go to your local computer and clone your fork of the AREDN |trade| documentation: ``git clone https://github.com/YOUR-GITHUB-ID/documentation``
-7. Navigate on your local computer to the folder where your cloned copy of the repository is located: ``cd documentation``  This directory contains your local copy of the AREDN |trade| documentation, and all of your document editing should be done while you are in this directory or its subdirectories.
+1. Accede a `GitHub <https://www.github.com/>`_ desde tu navegador
 
-The workflow for contributing documentation is identical to the workflow for contributing code which is described in the file titled **How to Use GitHub for AREDN**, a copy of which you already have in your new local repository. Refer to that document for additional information about contributing AREDN |trade| documentation.
+2. Desde esa misma página podrás registrarte, proporcionando un nombre de usuario (como sugerencia, incluye tu indicativo), e-mail y contraseña
 
-The only difference is the repository name of ``aredn/documentation`` and the main branch name of ``master``. Your local editing branch name can be anything that makes sense to you as you add topics to the documentation. AREDN |trade| documentation is written using the *reStructuredText* markup language and your text is saved in "rst" files. Before committing your changes, be sure to test your rst files locally to ensure they will render correctly.
+3. Una vez estés registrado, podrás acceder a tu cuenta personal a través del botón ``Sign In``
 
-After you create a Pull Request on GitHub, the AREDN |trade| team will review your changes. Once your documentation contributions are committed to the AREDN |trade| GitHub repository, a webhook automatically updates and builds the latest docs for viewing and exporting on ReadTheDocs.org
+4. Navega hasta el repositorio de documentación del proyecto AREDN |trade|, situado `aquí <https://github.com/aredn/documentation_es>`_
 
+5. Pincha en el botón ``Fork`` situado en la esquina superior derecha de la página. Acto seguido tendrás una copia de la documentación de AREDN |trade| en tu cuenta personal de GitHub.
+
+6. Realiza un cloneado de la documentación de AREDN |trade| a tu ordenador personal
+
+``git clone https://github.com/{TuNombreDeUsuario}/documentation_es``
+
+7. En tu ordenador personal, navega hasta el directorio donde se encuentra la documentación
+
+``cd documentation_es``
+
+Este directorio contiene una copia de la documentación de AREDN |trade|, por lo que toda la edición y añadidos realizados a la documentación se tendrán que hacer dentro de este directorio y subdirectorios relacionados
+
+El ciclo de trabajo para contribuir con la documentación es idéntico al de la contribución de código, descrito en `Cómo usar GitHub con AREDN <https://github.com/aredn/documentation_es/blob/master/Cómo%20usar%20GitHub%20con%20AREDN.md>`_. Podrás encontrar más información más detallada sobre cómo contribuir con el proyecto AREDN |trade|.
+
+La única diferencia reside en el nombre del repositorio ``aredn/documentation_es`` y de la rama principal ``master``. A la hora de nombrar tu rama local, puedes elegir el nombre que más cómodo te resulte. La documentación de AREDN |trade| está escrita y estructurada utilizando lenguaje markdown. El texto se almacena en ficheros ``.rst``. Antes de realizar una ``pull request``, asegurate de que tus ficheros ``.rst`` mantienen el formato y renderizan correctamente.
+
+Después de realizar una ``pull request``, el equipo de AREDN® lo revisará del mismo modo que se haría con el nuevo código. Una vez que tu aportación es aplicada al repositorio maestro, una operativa en segundo plano (``Webhook``) procesará los cambios, haciéndolos disponibles para lectura y exportación en ``Read the Docs``
 
 .. |trade|  unicode:: U+00AE .. Registered Trademark SIGN
    :ltrim:
