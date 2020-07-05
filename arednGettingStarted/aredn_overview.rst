@@ -1,24 +1,24 @@
-======================
-AREDN |trade| Overview
-======================
+====================================
+Información general de AREDN |trade|
+====================================
 
-The AREDN |trade| acronym stands for "Amateur Radio Emergency Data Network" and it provides a way for *Amateur Radio* operators to create high-speed ad hoc *Data Networks* for use in *Emergency* and service-oriented communications.
+AREDN |trade| es un acrónimo que significa *Amateur Radio Emergency Data Network* (cuya traducción aproximada al español sería *Red de Datos de Emergencia Radio Amateur*). Proporciona los mecanismos necesarios para que operadores de radio amateur establezcan una red de datos de alta velocidad ``ad-hoc``, que podrá ser utilizada tanto por comunicaciones de emergencia como por comunicaciones orientadas a servicio.
 
-For many years amateur radio operators and their served agencies have relied on voice transmissions for emergency or event communications. A typical message-passing scenario involved conveying the message to a radio operator who would write or type it onto a standard ICS-213 form. The message would then be relayed by radio to another operator who would write or type it on another ICS-213 form at the receiving end. The form would typically be hand-delivered to the recipient who would read and sign the form. Any acknowledgement or reply would then be handled through the same process from the receiving end back to the originator.
+Durante muchos años, los operadores de radio amateur, así como sus agencias relacionadas, han confiado sus comunicaciones de emergencia a las transmisiones de voz. Un escenario típico de intercambio de mensajes involucraría la transmisión de la información a un operador radio, que la anotaría en un formulario estándar ISC-213. Este mensaje sería retransmitido de nuevo, involucrando a un nuevo operador en recepción y su correspondiente formulario ISC-213. El destinatario final recibiría el formulario en mano, para su lectura y firmado. Cualquier acuse de recibo o respuesta se manejaría de este mismo modo, pero en sentido opuesto.
 
-This tried-and-true scenario has worked well, and it continues to work for handling much emergency and event traffic. Today, however, digital transmission is more commonly used instead of traditional methods and procedures. The hardcopy ICS-213 form is giving way to the Winlink electronic form, with messages being passed using digital technologies such as AX.25 packet, HF Pactor, Fldigi, and others.
+Este escenario ha demostrado con creces que puede funcionar bien y, de hecho, todavía continua sostentando mucho tráfico de emergencia. Sin embargo, hoy en día la transmisión digital se ha convertido en un mecanismo mucho más común frente a estos métodos tradicionales. Y afecta tanto la parte del formulario (cuyo modelo físico ISC-213 está siendo relegado a un segundo plano en pro de formulario electrónico Winlink), como a la parte de la tecnología de transmisión (AX.25, HF Pactor, Fldigi, ...)
 
-.. sidebar:: Our Mission
+.. sidebar:: Nuestra misión
 
-   The primary goal of the AREDN |trade| project is to empower licensed amateur radio operators to quickly and easily deploy high-speed data networks when and where they are needed.
+   El objetivo principal del proyecto AREDN |trade| es el de posibilitar a operadores de radio amateur con licencia el despliege rápido y sencillo de redes de datos de alta velocidad, cuándo y dónde sean necesarias.
 
-In today's high-tech society people have become accustomed to different ways of handling their communication needs. The preferred methods involve short messaging and keyboard-to-keyboard communication, along with audio-video communication using Voice over IP (VoIP) and streaming technologies.
+Dentro del escenario tecnológico social actual, la gente se ha acostumbrado a manejar sus necesidades de comunicación de múltiples maneras. En primer lugar se situan el intercambio de mensajes cortos y la comunicación *teclado a teclado*, seguidos por la videollamada sobre VoIP (Voz sobre IP) y otras tecnologías de streaming.
 
-The amateur radio community is able to meet these high-bandwidth digital communication requirements by using FCC Part 97 amateur radio frequency bands to send digital data between devices which are linked with each other to form a self-healing, fault-tolerant data network. Some have described this as an amateur radio version of the Internet. Although it is not intended for connecting people to **the Internet**, an AREDN |trade| mesh network will provide typical Internet or intranet-type applications to people who need to communicate across a wide area during an emergency or community event.
+La comunidad radio amateur es capaz de alcanzar los requisitos necesarios de banda ancha mediante el uso del espectro de frecuencia recogido en la FFC Part 97, consiguiendo establecer una red de datos tolerante a fallos y autoregenerativa. Este entorno, de algún modo, ha sido descrito como la versión radio amateur de Internet. Y, aunque no está concebida para facilitar conexión a Internet, sí que provee acceso a aplicaciones típicas de Internet/intranet para su uso durante eventos comunitarios y/o situaciones de emergencia. 
 
-An AREDN |trade| network is able to serve as the transport mechanism for the preferred applications people rely upon to communicate with each other in the normal course of their business and social interactions, including email, chat, phone service, document sharing, video conferencing, and many other useful programs. Depending on the characteristics of the AREDN |trade| implementation, this digital data network can operate at near-Internet speeds with many miles between network nodes.
+Una red AREDN |trade| es capaz de proporcionar el mecanismo de transporte para cualquier aplicación de comunicación, dentro de un flujo normal de negocio e interacción social (email, chat, servicio telefónico, intercambio de ficheros, videoconferencia, ...). Dependiendo de las características particulares del despliegue, la red podría operar a velocidad cercanas a Internet con distancias de decenas de kilómetros entre nodos.
 
-The primary goal of the AREDN |trade| project is to empower licensed amateur radio operators to quickly and easily deploy high-speed data networks when and where they might be needed, as a service both to the hobby and the community. This is especially important in cases when traditional "utility" services (electricity, phone lines, or Internet services) become unavailable. In those cases an off-grid amateur radio emergency data network may be a lifeline for communities impacted by a local disaster.
+El objetivo principal del proyecto AREDN |trade| es el de posibilitar a operadores de radio amateur con licencia el despliege rápido y sencillo de redes de datos de alta velocidad, buscando prestar servicio tanto a la comunidad general, como a la afición en particular. Esto es especialmente importante cuando los servicios esenciales tradicionales dejan de estar disponibles (electricidad, lineas telefónicas, o Internet). En esos casos, una *Red de Datos de Emergencia Radio Amateur* puede actuar como salvavidas para una comunidad impactada por un desastre.
 
 
 .. |trade|  unicode:: U+00AE .. Registered Trademark SIGN
